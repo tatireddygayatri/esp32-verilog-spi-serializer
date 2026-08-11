@@ -15,7 +15,7 @@ The image below demonstrates the active Wokwi hardware emulation running with re
 
 ![ESP32 Wokwi Simulation](wokwi_simulation.png)
 
-## 🔬 Firmware Architecture Breakdown
+## Firmware Architecture Breakdown
 1. **Payload Generation:** Initializes 32-bit sample data frames (`0xABCDE123`).
 2. **Serialization Engine:** Converts multi-byte integers into sequential bit streams transmitted over configured output pins.
 3. **Execution Loop:** Dynamically updates payload data on each transmission cycle (`sample_frame++`) and logs execution state via ESP-IDF `ESP_LOGI` macros.
